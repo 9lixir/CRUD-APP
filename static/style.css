@@ -1,0 +1,162 @@
+/* Import a clean, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary: #6366f1;       /* Indigo */
+    --primary-hover: #4f46e5;
+    --bg: #f8fafc;            /* Soft blue-grey bg */
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --danger: #ef4444;
+    --border: #e2e8f0;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text-main);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container for everything */
+.container {
+    width: 100%;
+    max-width: 900px;
+}
+
+h2, h3 {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.5rem;
+}
+
+/* Navigation / Top Bar */
+.nav-bar {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Forms & Cards */
+form, .card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+/* Input Styling */
+input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Premium Buttons */
+button {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.1s, background 0.2s;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* The Table (Modernized) */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+th {
+    background-color: #f1f5f9;
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    text-align: left;
+}
+
+td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: middle;
+}
+
+/* Remove border from last row */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Table Inputs - Compact */
+table input {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    background: #f8fafc;
+}
+
+/* Action Links */
+.btn-delete {
+    color: var(--danger);
+    font-size: 0.85rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.btn-delete:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.logout-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.logout-link:hover {
+    color: var(--danger);
+}
