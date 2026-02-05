@@ -1,4 +1,4 @@
-##Flask CRUD Application with User Authentication
+## Flask CRUD Application with User Authentication
 
 This is a Flask-based CRUD web application with user registration, login, session-based authentication, and PostgreSQL as the database.
 Users must log in to access and manage items (Create, Read, Update, Delete).
