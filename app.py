@@ -9,7 +9,7 @@ def get_db_connection():
     return psycopg2.connect(
         dbname="crud_lab",
         user="postgres",
-        password="1207",
+        password="YOUR_PASSWORD",
         host="localhost",
         port="5432"
     )
